@@ -18,5 +18,4 @@ int main(){
     r = func(5);
     printf("%d\n",r);
     return 0;
-
 }
