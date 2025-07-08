@@ -1,0 +1,1 @@
+arr.A = new int[arr.size] ---> This allocate the memory in heap.
