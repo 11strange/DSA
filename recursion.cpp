@@ -1,18 +1,17 @@
 #include <iostream>
 using namespace std;
 
-void func(int n){
-    if (n>0){
-        cout<<n<< " ";
-        func(n-1);
-
+int nSum(int n){
+    if (n==0){
+        return 0;
     }
-
+    int res = n + nSum(n-1);
+    return res;
 }
+
 
 int main(){
-    int x = 5;
-    func(x);
+    int sum = nSum(5);
+    cout<<sum;
     return 0;
 }
-    
